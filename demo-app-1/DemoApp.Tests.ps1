@@ -105,6 +105,30 @@ Describe 'Web Apps Tests' {
   }
 }
 
+Describe 'Deployed App Tests' {
+  it 'Should return 200' {
+    #arrange
+    $webAppName = "benchpress-web-${env:ENVIRONMENT_SUFFIX}"
+
+    #act
+    $result = Invoke-WebRequest -Uri "https://${webAppName}.azurewebsites.net"
+
+    #assert
+    $result.StatusCode | Should -Be 200
+  }
+
+  it 'Should have content' {
+    #arrange
+    $webAppName = "benchpress-web-${env:ENVIRONMENT_SUFFIX}"
+
+    #act
+    $result = Invoke-WebRequest -Uri "https://${webAppName}.azurewebsites.net"
+
+    #assert
+    $result.Content | Should -Be -Not $null
+  }
+}
+
 AfterAll {
   Get-Module BenchPress.Azure | Remove-Module
 }
