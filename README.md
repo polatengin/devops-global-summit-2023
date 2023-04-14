@@ -46,13 +46,15 @@ _BenchPress_ code itself is in Powershell, and the tests that use _BenchPress_ i
 
 ## Installation
 
-![image](https://user-images.githubusercontent.com/118744/231942348-c95613e9-3a19-4574-b1bf-b8258691caba.png)
+![image](https://user-images.githubusercontent.com/118744/231942450-9909fc0d-f424-47ba-aaee-379872b32ac5.png)
 
 There are two main ways to install _Benchpress_, using Powershell Gallery, or cloning the benchpress repo itself.
 
 _Benchpress_ published on Powershell Gallery as Az.InfrastructureTesting, to align with the other az modules, like Az.Storage, etc. we internally and externally call the project as _Benchpress_, but it's published to Powershell Gallery as Az.InfrastructureTesting.
 
 ## Creating Tests
+
+![image](https://user-images.githubusercontent.com/118744/231942523-1af761a8-fc29-4527-8c32-f341c2b6d775.png)
 
 In BenchPress version 0.2, you can provide a Bicep file or an ARM Template JSON file, and the generator will create a suite of tests based on the file contents for you. This functionality eliminates the need to begin the testing process from scratch. Instead, you can start with the pre-existing generated tests and make any necessary modifications by adding or removing tests.
 
