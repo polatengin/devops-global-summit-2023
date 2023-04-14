@@ -46,6 +46,8 @@ _BenchPress_ code itself is in Powershell, and the tests that use _BenchPress_ i
 
 ## Installation
 
+![image](https://user-images.githubusercontent.com/118744/231942348-c95613e9-3a19-4574-b1bf-b8258691caba.png)
+
 There are two main ways to install _Benchpress_, using Powershell Gallery, or cloning the benchpress repo itself.
 
 _Benchpress_ published on Powershell Gallery as Az.InfrastructureTesting, to align with the other az modules, like Az.Storage, etc. we internally and externally call the project as _Benchpress_, but it's published to Powershell Gallery as Az.InfrastructureTesting.
