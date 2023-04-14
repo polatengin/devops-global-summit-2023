@@ -66,6 +66,8 @@ Running the tests are pretty similar in a local environment or in a pipeline. Yo
 
 ## Analyzing Test Results
 
+![image](https://user-images.githubusercontent.com/118744/231942664-a00da37c-423d-4cc9-866b-5eabe896b38e.png)
+
 After executing the tests, we can simply check the log messages in the terminal, or publish the results as an artifact in the orchestrator, and investigate results afterwards. And BenchPress is using Powershell Pester test runner under the hood, so, it's possible to export test results in different formats, like NUnit, JUnit, etc. and since the results are in an xml shape, we can use 3rd party apps to query or analyze them too.
 
 ## Demos
