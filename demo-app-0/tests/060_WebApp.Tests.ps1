@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify Web App layer' {
   it 'Should contain the service plan' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "plan-$env:RESOURCE_SUFFIX"
 
     #act
@@ -17,7 +17,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the service plan with spot instances disabled' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "plan-$env:RESOURCE_SUFFIX"
 
     #act
@@ -29,7 +29,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the service plan with reserved instances disabled' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "plan-$env:RESOURCE_SUFFIX"
 
     #act
@@ -41,7 +41,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the service plan with dynamic tier' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "plan-$env:RESOURCE_SUFFIX"
 
     #act
@@ -53,7 +53,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the service plan with Y1 size' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "plan-$env:RESOURCE_SUFFIX"
 
     #act
@@ -65,7 +65,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the service plan with functionapp kind' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "plan-$env:RESOURCE_SUFFIX"
 
     #act
@@ -77,7 +77,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the resource' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "functionapp-$env:RESOURCE_SUFFIX"
 
     #act
@@ -89,7 +89,7 @@ Describe 'Verify Web App layer' {
 
   it 'Should contain the resource with httpsonly enabled' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "functionapp-$env:RESOURCE_SUFFIX"
 
     #act

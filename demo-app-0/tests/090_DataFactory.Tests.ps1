@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify Data Factory layer' {
   it 'Should contain the resource' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "datafactory-$env:RESOURCE_SUFFIX"
 
     #act
@@ -17,7 +17,7 @@ Describe 'Verify Data Factory layer' {
 
   it 'Should contain the data lake storage with disabled public network access' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "datafactory-$env:RESOURCE_SUFFIX"
 
     #act

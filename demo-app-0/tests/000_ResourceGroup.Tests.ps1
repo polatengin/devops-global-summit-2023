@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify Resource Group' {
   it 'Should contain the Resource Group' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
 
     #act
     $result = Confirm-AzBPResourceGroup -ResourceGroupName "$rgName"
@@ -16,7 +16,7 @@ Describe 'Verify Resource Group' {
 
   it 'Should contain the Resource Group in the correct location' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $location = "$env:LOCATION_NAME"
 
     #act
@@ -28,7 +28,7 @@ Describe 'Verify Resource Group' {
 
   it 'Should contain the Resource Group in Succeeded Provisioning State' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
 
     #act
     $result = Confirm-AzBPResourceGroup -ResourceGroupName "$rgName"
@@ -39,7 +39,7 @@ Describe 'Verify Resource Group' {
 
   it 'Should the Resource Group has Tags' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
 
     #act
     $result = Confirm-AzBPResourceGroup -ResourceGroupName "$rgName"
@@ -50,7 +50,7 @@ Describe 'Verify Resource Group' {
 
   it 'Should the Resource Group has correct Tag assigned' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
 
     #act
     $result = Confirm-AzBPResourceGroup -ResourceGroupName "$rgName"
@@ -61,7 +61,7 @@ Describe 'Verify Resource Group' {
 
   it 'Should the Resource Group has correct Tag assigned' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
 
     #act
     $result = Confirm-AzBPResourceGroup -ResourceGroupName "$rgName"

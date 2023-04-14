@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify Network Layer' {
   it 'Should contain the Storage Account' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "nwstrg$env:RESOURCE_SUFFIX"
 
     #act
@@ -17,7 +17,7 @@ Describe 'Verify Network Layer' {
 
   it 'Should contain the Storage Account in Standard_LRS Sku' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "nwstrg$env:RESOURCE_SUFFIX"
 
     #act
@@ -29,7 +29,7 @@ Describe 'Verify Network Layer' {
 
   it 'Should contain the Storage Account in Hot Access Tier' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "nwstrg$env:RESOURCE_SUFFIX"
 
     #act
@@ -41,7 +41,7 @@ Describe 'Verify Network Layer' {
 
   it 'Should contain the Storage Account https traffic only' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "nwstrg$env:RESOURCE_SUFFIX"
 
     #act
@@ -53,7 +53,7 @@ Describe 'Verify Network Layer' {
 
   it 'Should contain the Storage Account minimum tls version TLS1.2' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "nwstrg$env:RESOURCE_SUFFIX"
 
     #act

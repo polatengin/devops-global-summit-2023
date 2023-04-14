@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify KeyVault layer' {
   it 'Should contain the KeyVault' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "keyvault-$env:RESOURCE_SUFFIX"
 
     #act
@@ -17,7 +17,7 @@ Describe 'Verify KeyVault layer' {
 
   it 'Should contain the KeyVault with Standard Sku' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "keyvault-$env:RESOURCE_SUFFIX"
 
     #act
@@ -29,7 +29,7 @@ Describe 'Verify KeyVault layer' {
 
   it 'Should contain the KeyVault with soft delete enabled' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "keyvault-$env:RESOURCE_SUFFIX"
 
     #act
@@ -41,7 +41,7 @@ Describe 'Verify KeyVault layer' {
 
   it 'Should contain the KeyVault with purge protection disabled' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "keyvault-$env:RESOURCE_SUFFIX"
 
     #act
@@ -53,7 +53,7 @@ Describe 'Verify KeyVault layer' {
 
   it 'Should contain the KeyVault with public network access enabled' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "keyvault-$env:RESOURCE_SUFFIX"
 
     #act

@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify Monitoring layer' {
   it 'Should contain the Log Analytics Workspace' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "logAnalyticsWorkspace-$env:RESOURCE_SUFFIX"
 
     #act
@@ -17,7 +17,7 @@ Describe 'Verify Monitoring layer' {
 
   it 'Should contain the Log Analytics Workspace with Sku PerGB2018' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "logAnalyticsWorkspace-$env:RESOURCE_SUFFIX"
 
     #act
@@ -29,7 +29,7 @@ Describe 'Verify Monitoring layer' {
 
   it 'Should contain the Log Analytics Workspace with retentionInDays 30' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "logAnalyticsWorkspace-$env:RESOURCE_SUFFIX"
 
     #act

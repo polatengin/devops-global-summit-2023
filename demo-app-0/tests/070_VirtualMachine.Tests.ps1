@@ -5,7 +5,7 @@ BeforeAll {
 Describe 'Verify Virtual Machine layer' {
   it 'Should contain the virtual machine' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "vm-$env:RESOURCE_SUFFIX"
 
     #act
@@ -17,7 +17,7 @@ Describe 'Verify Virtual Machine layer' {
 
   it 'Should contain the virtual machines with Standard_D1_v2 VmSize' {
     #arrange
-    $rgName = "$env:RESOURCE_GROUP_NAME"
+    $rgName = "rg-$env:RESOURCE_SUFFIX"
     $name = "vm-$env:RESOURCE_SUFFIX"
 
     #act
