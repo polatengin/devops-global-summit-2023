@@ -1,5 +1,7 @@
 # What is BenchPress?
 
+![image](https://user-images.githubusercontent.com/118744/231942183-6026270a-1fcc-437b-b15d-a2dcf64eb41f.png)
+
 _Benchpress_ is an _infrastructure testing framework for Azure Deployment scenarios_. Regardless of the resource deployment mechanism utilized on _Azure_, such as _ARM Templates_, _Azure CLI_ commands, _Bicep_ files/modules, or the _Azure Portal_ (collectively referred to as Click-Ops), _BenchPress_ can be used.
 
 ## Why infrastructure testing is important?
