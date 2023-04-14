@@ -170,6 +170,8 @@ az group delete --name "benchpress-rg-${env:ENVIRONMENT_SUFFIX}" --yes
 
 ## Contribution
 
+![image](https://user-images.githubusercontent.com/118744/231942807-e631d69f-0991-4558-becf-9930e103deed.png)
+
 BenchPress is open sourced under the Azure org. and it's open to contribution.
 
 You can create a PR, you can request a feature, you can report issues, you can join discussions, anything will be more than welcome.
