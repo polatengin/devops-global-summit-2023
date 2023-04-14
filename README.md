@@ -72,6 +72,8 @@ After executing the tests, we can simply check the log messages in the terminal,
 
 ## Demos
 
+![image](https://user-images.githubusercontent.com/118744/231942734-92d86cde-7395-4659-8858-313e5886987c.png)
+
 There are two demos in this repo, one is a complex demo, and the other one is a simple demo.
 
 ### Complex Demo
