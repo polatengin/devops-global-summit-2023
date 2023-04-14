@@ -60,6 +60,8 @@ In BenchPress version 0.2, you can provide a Bicep file or an ARM Template JSON 
 
 ## Running Tests
 
+![image](https://user-images.githubusercontent.com/118744/231942599-3d6796c4-ae82-4320-b6e7-acf09185cef4.png)
+
 Running the tests are pretty similar in a local environment or in a pipeline. You can just call `Invoke-Pester` command to run all the tests in the folder, or you can provide the test filename to `Invoke-Pester` command to run the tests in a specific file, or you can simply call the test script file directly.
 
 ## Analyzing Test Results
